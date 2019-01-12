@@ -1,0 +1,340 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: IAPManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0054473877, y: 2.67160034, z: 7.97937012}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a446adb3bdc8e4b4cbf729564a4055c6, type: 3}
+  m_Name: 
+  m_StoreItems:
+  - Description: Pile of cans
+    ExtendedDescription: 7,500 Cans
+    Icon: {fileID: 2800000, guid: f0ef70393636a4581834326110222adf, type: 3}
+    ID: iap_store_1
+    Currency: 1
+    Cost: []
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 0
+      RewardValue: 7500
+      Reference: 
+    UpgradeLevel: 0
+  - Description: Bag of cans
+    ExtendedDescription: 50,000 Cans
+    Icon: {fileID: 2800000, guid: ab5bac22da6d4430d964bf206317e0e6, type: 3}
+    ID: iap_store_2
+    Currency: 1
+    Cost:
+    - 0
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 0
+      RewardValue: 50000
+      Reference: 
+    UpgradeLevel: 0
+  - Description: Box of cans
+    ExtendedDescription: 150,000 cans
+    Icon: {fileID: 2800000, guid: db9295610aec94a5393c1dd974f9079e, type: 3}
+    ID: iap_store_3
+    Currency: 1
+    Cost:
+    - 0
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 0
+      RewardValue: 150000
+      Reference: 
+    UpgradeLevel: 0
+  - Description: Crate of cans
+    ExtendedDescription: 400,000 cans
+    Icon: {fileID: 2800000, guid: 74469d0ab391d41d990fba0a10747c7f, type: 3}
+    ID: iap_store_40
+    Currency: 1
+    Cost:
+    - 0
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 0
+      RewardValue: 400000
+      Reference: 
+    UpgradeLevel: 0
+  - Description: Vault of Cans
+    ExtendedDescription: 1,000,000 cans
+    Icon: {fileID: 2800000, guid: b58567a5ba3c4411582d927e86db388e, type: 3}
+    ID: iap_store_5
+    Currency: 1
+    Cost:
+    - 0
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 0
+      RewardValue: 1e+06
+      Reference: 
+    UpgradeLevel: 0
+  m_SingleUpgradeItems:
+  - Description: Double Cans
+    ExtendedDescription: Double all can pickups
+    Icon: {fileID: 2800000, guid: ee9fb3272b6724537a91d593d8e7c368, type: 3}
+    ID: iap_store_10
+    Currency: 1
+    Cost:
+    - 0
+    Type: 0
+    BackgroundColour: 1
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: mission1
+    UpgradeLevel: 0
+  - Description: Score Booster
+    ExtendedDescription: Increase Multiplier by 5
+    Icon: {fileID: 2800000, guid: c36e2ae07ac1f4e588babb195d30ed9a, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 2500
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: mission2
+    UpgradeLevel: 0
+  - Description: Perk Booster
+    ExtendedDescription: More Perks in game
+    Icon: {fileID: 2800000, guid: 3f6e7418a45c34920add8806f25bea4c, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 1600
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: perk_boost
+    UpgradeLevel: 0
+  - Description: Skip Mission 1
+    ExtendedDescription: Skip current Mission 1
+    Icon: {fileID: 2800000, guid: 1bc24f4f4d2114759aac77ee04eabc13, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 1600
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: mission3
+    UpgradeLevel: 0
+  - Description: Skip Mission 2
+    ExtendedDescription: Skip current Mission 2
+    Icon: {fileID: 2800000, guid: 1bc24f4f4d2114759aac77ee04eabc13, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 1600
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: mission3
+    UpgradeLevel: 0
+  - Description: Skip Mission 3
+    ExtendedDescription: Skip current Mission 3
+    Icon: {fileID: 2800000, guid: 1bc24f4f4d2114759aac77ee04eabc13, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 1600
+    Type: 1
+    BackgroundColour: 0
+    Reward:
+      Type: 2
+      RewardValue: 0
+      Reference: mission3
+    UpgradeLevel: 0
+  m_PermanentUpgradeItems:
+  - Description: Coin Magnet
+    ExtendedDescription: 
+    Icon: {fileID: 2800000, guid: 13215c2264d054e2d9ff6d507ecb16a3, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 500
+    - 1500
+    - 3000
+    - 10000
+    - 30000
+    Type: 2
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: eStopItems
+    UpgradeLevel: 0
+  - Description: Double Cans
+    ExtendedDescription: 
+    Icon: {fileID: 2800000, guid: ee9fb3272b6724537a91d593d8e7c368, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 500
+    - 1500
+    - 3000
+    - 10000
+    - 30000
+    Type: 2
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: pause_items
+    UpgradeLevel: 0
+  - Description: Pause Obstacles
+    ExtendedDescription: 
+    Icon: {fileID: 2800000, guid: 8ad736332f56147208dc5609c925baf1, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 500
+    - 1500
+    - 3000
+    - 10000
+    - 30000
+    Type: 2
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: pause_items
+    UpgradeLevel: 0
+  - Description: 2X Multiplier
+    ExtendedDescription: 
+    Icon: {fileID: 2800000, guid: 4116b978a725a42c28b458a83ef6b23c, type: 3}
+    ID: iap_store_99
+    Currency: 0
+    Cost:
+    - 500
+    - 1500
+    - 3000
+    - 10000
+    - 30000
+    Type: 2
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: eDoubleCoins
+    UpgradeLevel: 0
+  - Description: Invisibility
+    ExtendedDescription: 
+    Icon: {fileID: 2800000, guid: ca8130b1113bd4d9a960b1b6151241ee, type: 3}
+    ID: 
+    Currency: 0
+    Cost:
+    - 500
+    - 1500
+    - 3000
+    - 10000
+    - 30000
+    Type: 2
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: pause_items
+    UpgradeLevel: 0
+  m_CharacterItems:
+  - Description: Toby
+    ExtendedDescription: 
+    Icon: {fileID: 0}
+    ID: char_toby
+    Currency: 0
+    Cost:
+    - 0
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: Toby
+    UpgradeLevel: 0
+  - Description: Roxy
+    ExtendedDescription: 
+    Icon: {fileID: 0}
+    ID: char_roxy
+    Currency: 0
+    Cost:
+    - 18000
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: Roxy
+    UpgradeLevel: 0
+  - Description: Earl
+    ExtendedDescription: 
+    Icon: {fileID: 0}
+    ID: char_earl
+    Currency: 0
+    Cost:
+    - 30000
+    Type: 0
+    BackgroundColour: 0
+    Reward:
+      Type: 1
+      RewardValue: 0
+      Reference: Earl
+    UpgradeLevel: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

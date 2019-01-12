@@ -1,0 +1,133 @@
+fileFormatVersion: 2
+guid: 2dc72ce1ae33f41049d4f823630d58a0
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: DownAlley
+    100002: DownGreen
+    100004: DownStores
+    100006: LeftAlley
+    100008: LeftGreen
+    100010: LeftStores
+    100012: RightAlley
+    100014: RightGreen
+    100016: RightStores
+    100018: StraightAlley
+    100020: StraightGreen
+    100022: StraightStores
+    100024: //RootNode
+    100026: UpAlley
+    100028: UpGreen
+    100030: UpStores
+    400000: DownAlley
+    400002: DownGreen
+    400004: DownStores
+    400006: LeftAlley
+    400008: LeftGreen
+    400010: LeftStores
+    400012: RightAlley
+    400014: RightGreen
+    400016: RightStores
+    400018: StraightAlley
+    400020: StraightGreen
+    400022: StraightStores
+    400024: //RootNode
+    400026: UpAlley
+    400028: UpGreen
+    400030: UpStores
+    2300000: DownAlley
+    2300002: DownGreen
+    2300004: DownStores
+    2300006: LeftAlley
+    2300008: LeftGreen
+    2300010: LeftStores
+    2300012: RightAlley
+    2300014: RightGreen
+    2300016: RightStores
+    2300018: StraightAlley
+    2300020: StraightGreen
+    2300022: StraightStores
+    2300024: UpAlley
+    2300026: UpGreen
+    2300028: UpStores
+    3300000: DownAlley
+    3300002: DownGreen
+    3300004: DownStores
+    3300006: LeftAlley
+    3300008: LeftGreen
+    3300010: LeftStores
+    3300012: RightAlley
+    3300014: RightGreen
+    3300016: RightStores
+    3300018: StraightAlley
+    3300020: StraightGreen
+    3300022: StraightStores
+    3300024: UpAlley
+    3300026: UpGreen
+    3300028: UpStores
+    4300000: StraightAlley
+    4300002: StraightStores
+    4300004: StraightGreen
+    4300006: UpStores
+    4300008: DownStores
+    4300010: RightStores
+    4300012: LeftStores
+    4300014: UpGreen
+    4300016: DownGreen
+    4300018: RightGreen
+    4300020: LeftGreen
+    4300022: UpAlley
+    4300024: DownAlley
+    4300026: LeftAlley
+    4300028: RightAlley
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 

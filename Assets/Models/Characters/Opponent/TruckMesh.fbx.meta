@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 58c8c4df7e6374720adce5b7d96ee1e4
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: LTireB
+    100002: LTireF
+    100004: RTireB
+    100006: RTireF
+    100008: //RootNode
+    100010: TruckMesh
+    100012: polySurface527
+    100014: polySurface555
+    100016: polySurface556
+    100018: polySurface557
+    100020: polySurface563
+    400000: LTireB
+    400002: LTireF
+    400004: RTireB
+    400006: RTireF
+    400008: TruckMesh
+    400010: //RootNode
+    400012: polySurface527
+    400014: polySurface555
+    400016: polySurface556
+    400018: polySurface557
+    400020: polySurface563
+    2300000: LTireB
+    2300002: LTireF
+    2300004: RTireB
+    2300006: RTireF
+    2300008: TruckMesh
+    2300010: polySurface527
+    2300012: polySurface555
+    2300014: polySurface556
+    2300016: polySurface557
+    2300018: polySurface563
+    3300000: LTireB
+    3300002: LTireF
+    3300004: RTireB
+    3300006: RTireF
+    3300008: TruckMesh
+    3300010: polySurface527
+    3300012: polySurface555
+    3300014: polySurface556
+    3300016: polySurface557
+    3300018: polySurface563
+    4300000: LTireF
+    4300002: RTireF
+    4300004: LTireB
+    4300006: RTireB
+    4300008: TruckMesh
+    4300010: polySurface527
+    4300012: polySurface555
+    4300014: polySurface556
+    4300016: polySurface557
+    4300018: polySurface563
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 14
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      keepAdditionalBonesAnimation: 1
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      skeletonMaskElements: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

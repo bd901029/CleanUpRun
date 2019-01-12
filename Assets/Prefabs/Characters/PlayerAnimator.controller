@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!91 &9100000
+AnimatorController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayerAnimator
+  m_AnimatorEvents:
+  - m_Name: Jump
+    m_Type: 4
+    m_Min: -1
+    m_Max: 1
+    m_DefaultVector: {x: 0, y: 0, z: 0}
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+  - m_Name: Hit
+    m_Type: 4
+    m_Min: -1
+    m_Max: 1
+    m_DefaultVector: {x: 0, y: 0, z: 0}
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+  - m_Name: Speed
+    m_Type: 1
+    m_Min: 0
+    m_Max: 1
+    m_DefaultVector: {x: 0, y: 0, z: 0}
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+  m_Layers:
+  - serializedVersion: 2
+    m_Name: Base Layer
+    m_Type: 0
+    m_StateMachine: {fileID: 110700000}
+    m_HumanMask: {fileID: 0}
+    m_SkeletonMask: {fileID: 0}
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_StateMachineMotionSetIndex: 0
+    m_IKPass: 0
+--- !u!206 &20600000
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendEvent: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+--- !u!206 &20600002
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs:
+  - m_Motion: {fileID: 7400000, guid: c31468334a34a4f1787382b2965aaa14, type: 3}
+    m_Threshold: 0
+    m_TimeScale: 1
+    m_IsAnim: 1
+  - m_Motion: {fileID: 7400000, guid: 0810f322b02b830478d0d4a540209739, type: 3}
+    m_Threshold: 1
+    m_TimeScale: 1
+    m_IsAnim: 1
+  m_BlendEvent: Speed
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+--- !u!206 &20600004
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendEvent: Speed
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+--- !u!206 &20600006
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendEvent: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+--- !u!1101 &110100000
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110209408}
+  m_DstState: {fileID: 110200000}
+  m_TransitionDuration: .345064193
+  m_TransitionOffset: .00622321106
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .612262547
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110165509
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110217169}
+  m_DstState: {fileID: 110207384}
+  m_TransitionDuration: .0122738406
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: Jump
+    m_EventTreshold: 0
+    m_ExitTime: 0
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110181833
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110207384}
+  m_DstState: {fileID: 110200000}
+  m_TransitionDuration: .5
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .5
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110184943
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110263553}
+  m_DstState: {fileID: 110217169}
+  m_TransitionDuration: .49087733
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .511642277
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110188274
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110209408}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Hit
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1102 &110200000
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Run
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 20600002}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 264, y: 252, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1102 &110207384
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: JumpLand
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 7400004, guid: 13ce1d27d9892410e9ddd05bbe1d0f99, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 408, y: 144, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1102 &110209408
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Hit
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 7400000, guid: ab892f5ddfb16224490b60a4f6b0a1f9, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -22, y: 246, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1102 &110217169
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: JumpPose
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 7400002, guid: 13ce1d27d9892410e9ddd05bbe1d0f99, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 240, y: 72, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1102 &110263553
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: JumpStart
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 7400000, guid: 13ce1d27d9892410e9ddd05bbe1d0f99, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 96, y: 156, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1102 &110269648
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Speed: 1
+  m_Motions:
+  - {fileID: 20600004}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 343, y: 203, z: 0}
+  m_IKOnFeet: 1
+  m_Tag: 
+--- !u!1107 &110700000
+StateMachine:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Base Layer
+  m_DefaultState: {fileID: 110200000}
+  m_States:
+  - {fileID: 110200000}
+  - {fileID: 110263553}
+  - {fileID: 110217169}
+  - {fileID: 110207384}
+  - {fileID: 110209408}
+  - {fileID: 110269648}
+  m_ChildStateMachine: []
+  m_ChildStateMachinePosition: []
+  m_LocalTransitions:
+    data:
+      first: {fileID: 0}
+      second:
+      - {fileID: 110188274}
+    data:
+      first: {fileID: 110200000}
+      second: []
+    data:
+      first: {fileID: 110217169}
+      second:
+      - {fileID: 110165509}
+    data:
+      first: {fileID: 110207384}
+      second:
+      - {fileID: 110184943}
+    data:
+      first: {fileID: 110209408}
+      second:
+      - {fileID: 110100000}
+  m_OrderedTransitions:
+    data:
+      first: {fileID: 110269648}
+      second: []
+    data:
+      first: {fileID: 0}
+      second:
+      - {fileID: 110188274}
+    data:
+      first: {fileID: 110200000}
+      second: []
+    data:
+      first: {fileID: 110263553}
+      second: []
+    data:
+      first: {fileID: 110217169}
+      second:
+      - {fileID: 110165509}
+    data:
+      first: {fileID: 110207384}
+      second:
+      - {fileID: 110184943}
+    data:
+      first: {fileID: 110209408}
+      second:
+      - {fileID: 110100000}
+  m_MotionSetCount: 1
+  m_AnyStatePosition: {x: 0, y: 324, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

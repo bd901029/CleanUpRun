@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!129 &1
+PlayerSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  AndroidProfiler: 0
+  defaultScreenOrientation: 0
+  targetDevice: 2
+  targetGlesGraphics: 1
+  targetResolution: 0
+  accelerometerFrequency: 60
+  companyName: Blue Jungle Studios
+  productName: Dustbin Dash
+  defaultCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
+  defaultScreenWidth: 480
+  defaultScreenHeight: 720
+  defaultScreenWidthWeb: 320
+  defaultScreenHeightWeb: 480
+  m_RenderingPath: 1
+  m_ActiveColorSpace: 0
+  m_MTRendering: 1
+  m_UseDX11: 0
+  iosShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: -1
+  displayResolutionDialog: 1
+  allowedAutorotateToPortrait: 1
+  allowedAutorotateToPortraitUpsideDown: 1
+  allowedAutorotateToLandscapeRight: 1
+  allowedAutorotateToLandscapeLeft: 1
+  useOSAutorotation: 1
+  use32BitDisplayBuffer: 1
+  use24BitDepthBuffer: 0
+  defaultIsFullScreen: 0
+  runInBackground: 0
+  captureSingleScreen: 0
+  Override IPod Music: 0
+  usePlayerLog: 1
+  stripPhysics: 0
+  resizableWindow: 0
+  useMacAppStoreValidation: 0
+  xboxSkinOnGPU: 1
+  xboxEnableAvatar: 0
+  xboxEnableKinect: 0
+  xboxEnableKinectAutoTracking: 0
+  xboxEnableFitness: 0
+  macFullscreenMode: 2
+  xboxSpeechDB: 0
+  wiiHio2Usage: -1
+  wiiLoadingScreenRectPlacement: 0
+  wiiLoadingScreenBackground: {r: 1, g: 1, b: 1, a: 1}
+  wiiLoadingScreenPeriod: 1000
+  wiiLoadingScreenFileName: 
+  wiiLoadingScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_SupportedAspectRatios:
+    4:3: 1
+    5:4: 1
+    16:10: 1
+    16:9: 1
+    Others: 1
+  iPhoneBundleIdentifier: com.bluejunglestudios.cleanuprun
+  iPhoneBundleVersion: 0.3.8-ashleywright
+  AndroidBundleVersionCode: 1
+  AndroidMinSdkVersion: 6
+  AndroidPreferredInstallLocation: 1
+  aotOptions: 
+  apiCompatibilityLevel: 2
+  iPhoneStrippingLevel: 0
+  iPhoneScriptCallOptimization: 0
+  ForceInternetPermission: 0
+  ForceSDCardPermission: 0
+  CreateWallpaper: 0
+  APKExpansionFiles: 0
+  StripUnusedMeshComponents: 0
+  iPhoneSdkVersion: 988
+  iPhoneTargetOSVersion: 10
+  uIPrerenderedIcon: 1
+  uIRequiresPersistentWiFi: 0
+  uIStatusBarHidden: 1
+  uIExitOnSuspend: 0
+  uIStatusBarStyle: 0
+  iPhoneSplashScreen: {fileID: 2800000, guid: 309d03ec2ce3d436bbaaf9edd1b163c3, type: 3}
+  iPhoneHighResSplashScreen: {fileID: 2800000, guid: 789c1db084f174e31bd09c0faf1e4214,
+    type: 3}
+  iPhoneTallHighResSplashScreen: {fileID: 2800000, guid: 9cb588dbb378048eaa282c20a114807e,
+    type: 3}
+  iPadPortraitSplashScreen: {fileID: 2800000, guid: 6bfe776eb500f47589c5312f2978ac9a,
+    type: 3}
+  iPadHighResPortraitSplashScreen: {fileID: 2800000, guid: 309d03ec2ce3d436bbaaf9edd1b163c3,
+    type: 3}
+  iPadLandscapeSplashScreen: {fileID: 2800000, guid: 6bfe776eb500f47589c5312f2978ac9a,
+    type: 3}
+  iPadHighResLandscapeSplashScreen: {fileID: 2800000, guid: 309d03ec2ce3d436bbaaf9edd1b163c3,
+    type: 3}
+  AndroidTargetDevice: 0
+  AndroidSplashScreenScale: 0
+  AndroidKeystoreName: 
+  AndroidKeyaliasName: 
+  resolutionDialogBanner: {fileID: 0}
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 892ce6c22f0e441ac823902367c0f211, type: 3}
+      m_Size: 128
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Icon: {fileID: 2800000, guid: 5941a54f820f74a8fb57ba1ee7b3c355, type: 3}
+      m_Size: 144
+    - m_Icon: {fileID: 2800000, guid: 5941a54f820f74a8fb57ba1ee7b3c355, type: 3}
+      m_Size: 114
+    - m_Icon: {fileID: 2800000, guid: b154bcd983e574cbfa3ae789e9361bdb, type: 3}
+      m_Size: 72
+    - m_Icon: {fileID: 2800000, guid: 3a25492a7ea904be398dccba456b8437, type: 3}
+      m_Size: 57
+  m_BuildTargetBatching: []
+  webPlayerTemplate: APPLICATION:Black Background
+  m_TemplateCustomTags: {}
+  wiiRegion: 1
+  wiiGameCode: RABA
+  wiiGameVersion: 
+  wiiCompanyCode: ZZ
+  wiiSupportsNunchuk: 0
+  wiiSupportsClassicController: 0
+  wiiSupportsBalanceBoard: 0
+  wiiSupportsMotionPlus: 0
+  wiiControllerCount: 1
+  wiiFloatingPointExceptions: 0
+  wiiScreenCrashDumps: 1
+  wiiMemoryLabelCount: 155
+  wiiMemorySetup: 0000000000000000000000000000000000000000
+  XboxTitleId: 
+  XboxImageXexPath: 
+  XboxSpaPath: 
+  XboxGenerateSpa: 0
+  XboxDeployKinectResources: 0
+  XboxSplashScreen: {fileID: 0}
+  xboxEnableSpeech: 0
+  xboxAdditionalTitleMemorySize: 0
+  ps3TitleConfigPath: 
+  ps3DLCConfigPath: 
+  ps3ThumbnailPath: 
+  ps3BackgroundPath: 
+  ps3SoundPath: 
+  ps3TrophyCommId: 
+  ps3TrophyPackagePath: 
+  ps3BootCheckMaxSaveGameSizeKB: 128
+  ps3TrophyCommSig: 
+  ps3SaveGameSlots: 1
+  ps3TrialMode: 0
+  flashStrippingLevel: 2
+  scriptingDefineSymbols:
+    data:
+      first: 2
+      second: 
+    data:
+      first: 4
+      second: 
+    data:
+      first: 7
+      second: 
+  metroPackageName: 
+  metroPackageLogo: 
+  metroPackageVersion: 
+  metroCertificatePath: 
+  metroCertificatePassword: 
+  metroCertificateSubject: 
+  metroCertificateIssuer: 
+  metroCertificateNotAfter: 0000000000000000
+  metroApplicationDescription: 
+  metroTileLogo: 
+  metroTileWideLogo: 
+  metroTileSmallLogo: 
+  metroTileShortName: 
+  metroTileShowName: 0
+  metroTileForegroundText: 1
+  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenImage: 
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  metroSplashScreenUseBackgroundColor: 0
+  firstStreamedLevelWithResources: 0
+  unityRebuildLibraryVersion: 9
+  unityForwardCompatibleVersion: 37
+  unityStandardAssetsVersion: 0

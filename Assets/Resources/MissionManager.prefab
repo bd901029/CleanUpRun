@@ -1,0 +1,788 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: MissionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00494003296, y: 1.19826317, z: -.00245499611}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1357bc0006a544b0c83210d5e67c7290, type: 3}
+  m_Name: 
+  m_Levels:
+  - missions:
+    - name: Mission1
+      description: Jump 15 Times
+      type: 4
+      scope: 0
+      arg: 15
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 200 cans in one session
+      type: 2
+      scope: 1
+      arg: 200
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Collect 1000 cans
+      type: 2
+      scope: 0
+      arg: 1000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x2
+  - missions:
+    - name: Mission1
+      description: Pickup 2 Powerups
+      type: 9
+      scope: 0
+      arg: 2
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Play 10 Times
+      type: 7
+      scope: 0
+      arg: 10
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Die within 10 seconds
+      type: 8
+      scope: 2
+      arg: 10
+      compareType: 1
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x3
+  - missions:
+    - name: Mission1
+      description: Collect 1 Perk
+      type: 9
+      scope: 2
+      arg: 1
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 1000 Points in 1 run
+      type: 1
+      scope: 2
+      arg: 1000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Spend 500 Cans
+      type: 3
+      scope: 0
+      arg: 500
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x4
+  - missions:
+    - name: Mission1
+      description: Collect 2 Magnets
+      type: 5
+      scope: 0
+      arg: 2
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Score 10,000
+      type: 1
+      scope: 0
+      arg: 10000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 1000 Points without hit
+      type: 1
+      scope: 2
+      arg: 1000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x5
+  - missions:
+    - name: Mission1
+      description: Spend 2000
+      type: 3
+      scope: 0
+      arg: 2000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 10 cans with magnet
+      type: 5
+      scope: 0
+      arg: 10
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: No Jump
+      type: 4
+      scope: 2
+      arg: 1
+      compareType: 1
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x6
+  - missions:
+    - name: Mission1
+      description: 6 perks collected
+      type: 9
+      scope: 0
+      arg: 6
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Jump 20 times
+      type: 4
+      scope: 0
+      arg: 20
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 1000 Points without cans
+      type: 2
+      scope: 2
+      arg: 0
+      compareType: 1
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x7
+  - missions:
+    - name: Mission1
+      description: Collect 300 Cans
+      type: 2
+      scope: 2
+      arg: 300
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 7000 cans
+      type: 2
+      scope: 0
+      arg: 7000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Play 15 games
+      type: 7
+      scope: 0
+      arg: 15
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x8
+  - missions:
+    - name: Mission1
+      description: Collect 3 Perks
+      type: 9
+      scope: 2
+      arg: 3
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 50,000 Points
+      type: 1
+      scope: 0
+      arg: 50000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Collect 25 Cans (Magnet)
+      type: 10
+      scope: 0
+      arg: 25
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x9
+  - missions:
+    - name: Mission1
+      description: Collect 3 Magnets
+      type: 5
+      scope: 0
+      arg: 3
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 2500 with hit
+      type: 1
+      scope: 2
+      arg: 2500
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Use different character
+      type: 11
+      scope: 0
+      arg: 1
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x10
+  - missions:
+    - name: Mission1
+      description: Spend 4000 Cans
+      type: 3
+      scope: 0
+      arg: 4000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 40 cans with magnet
+      type: 10
+      scope: 0
+      arg: 40
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Score 2000 without cans
+      type: 7
+      scope: 0
+      arg: 2000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x11
+  - missions:
+    - name: Mission1
+      description: Collect 400 Cans
+      type: 2
+      scope: 2
+      arg: 400
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 5 Perks
+      type: 9
+      scope: 0
+      arg: 5
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Jump 10 Times
+      type: 4
+      scope: 2
+      arg: 10
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x12
+  - missions:
+    - name: Mission1
+      description: 2500 Points
+      type: 1
+      scope: 2
+      arg: 2500
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 4 Magnets
+      type: 5
+      scope: 0
+      arg: 4
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Play 20 games
+      type: 7
+      scope: 0
+      arg: 20
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 5000 cans
+      type: 2
+      scope: 0
+      arg: 5000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 100,000 score
+      type: 1
+      scope: 0
+      arg: 1000000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Spend 5000 Cans
+      type: 3
+      scope: 0
+      arg: 5000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 500 cans
+      type: 2
+      scope: 2
+      arg: 500
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 4 Perks
+      type: 9
+      scope: 2
+      arg: 4
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 3000 Without Hit
+      type: 7
+      scope: 2
+      arg: 3000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: Jump 40 times
+      type: 4
+      scope: 0
+      arg: 40
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 50 Cans with Magnet
+      type: 10
+      scope: 0
+      arg: 50
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 8 Perks Collected
+      type: 9
+      scope: 0
+      arg: 8
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 3000 Points
+      type: 1
+      scope: 2
+      arg: 3000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: spend 6000
+      type: 3
+      scope: 0
+      arg: 6000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 4000 score without hit
+      type: 1
+      scope: 0
+      arg: 4000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 6000 cans total
+      type: 2
+      scope: 0
+      arg: 6000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 8 perks collected
+      type: 9
+      scope: 0
+      arg: 8
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Collect 5 magnets
+      type: 5
+      scope: 0
+      arg: 5
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 250,000 Score
+      type: 1
+      scope: 0
+      arg: 250000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Play 30 Times
+      type: 8
+      scope: 0
+      arg: 30
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Collect 5 Perks
+      type: 9
+      scope: 2
+      arg: 5
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 800 cans
+      type: 2
+      scope: 2
+      arg: 800
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 10 Perks collected
+      type: 9
+      scope: 0
+      arg: 10
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 5000 Points no hit
+      type: 1
+      scope: 0
+      arg: 5000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 5000 Points
+      type: 1
+      scope: 2
+      arg: 5000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 100 Cans Magnet
+      type: 5
+      scope: 0
+      arg: 100
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 5000 Points no cans
+      type: 1
+      scope: 2
+      arg: 5000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 4 Treasure Chests
+      type: 6
+      scope: 0
+      arg: 4
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Jump 60 Times
+      type: 4
+      scope: 2
+      arg: 60
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 8000 Cans collected
+      type: 2
+      scope: 0
+      arg: 8000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 10 Magnets
+      type: 10
+      scope: 0
+      arg: 10
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Play 50 Times
+      type: 7
+      scope: 0
+      arg: 50
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 7500 No Damage
+      type: 1
+      scope: 0
+      arg: 7500
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 1000 Cans
+      type: 2
+      scope: 2
+      arg: 1000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 500,000 Score
+      type: 1
+      scope: 0
+      arg: 500000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 7500 Points
+      type: 1
+      scope: 2
+      arg: 7500
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 100,000 Cans
+      type: 2
+      scope: 0
+      arg: 10000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Jump 60 Times
+      type: 4
+      scope: 2
+      arg: 60
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Complete 5 Daily Challenges
+      type: 12
+      scope: 0
+      arg: 5
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 12 Perks
+      type: 9
+      scope: 0
+      arg: 12
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Collect 250 cans
+      type: 5
+      scope: 2
+      arg: 250
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: Collect 5 Treasure Boxes
+      type: 6
+      scope: 0
+      arg: 5
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 6 perks
+      type: 9
+      scope: 0
+      arg: 6
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: 1000000 Score
+      type: 1
+      scope: 0
+      arg: 1000000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 10,000 No Damage
+      type: 1
+      scope: 2
+      arg: 10000
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  - missions:
+    - name: Mission1
+      description: 10,000 Points
+      type: 1
+      scope: 2
+      arg: 10000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission2
+      description: Spend 10000
+      type: 3
+      scope: 0
+      arg: 10000
+      compareType: 0
+      completed: 0
+      amount: 0
+    - name: Mission3
+      description: 500 with magnet
+      type: 5
+      scope: 0
+      arg: 500
+      compareType: 0
+      completed: 0
+      amount: 0
+    rewards:
+    - Score Multiplier x13
+  m_DailyMission:
+    description: Collect 20 Vending machines today!
+    type: 13
+    arg: 20
+    completed: 0
+    amount: 0
+  m_Toast: {fileID: 100000, guid: 1f4866ce88f8a4f2186fafb2e4ef4fe0, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

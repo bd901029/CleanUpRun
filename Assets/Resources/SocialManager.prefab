@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SocialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 247.820038, y: 1.91800809, z: 3.41010427}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35773cbbeaa7e4f32aa53ba9dc56bdae, type: 3}
+  m_Name: 
+  PopupMessages:
+  - Come back we miss you
+  - Don't let the truck get away with the cans!
+  - These cans won't collect themselves! Were waiting for you...
+  PostMessage: 
+  ReviewPrompt:
+    HoursBetweenPrompt: 1
+    iTunesID: 656221375
+    Title: Like Dustbin Dash?
+    Message: If you liked Dustbin dash, we'd love to know.
+  Networks:
+  - network: 2
+    ID: N/A
+    secret: N/A
+    Rank: 0
+    HighScore: 0
+    Dirty: 1
+  - network: 0
+    ID: 457240714362969
+    secret: 3b19311d109bfb1a4ef93d9334223f39
+    Rank: 0
+    HighScore: 0
+    Dirty: 1
+  - network: 1
+    ID: 41fvx251N7ZBrsehCh7wGA
+    secret: yIgMQBrB2Ynlau1IW2eGMiGOpSbSxUOrrLZ5J3PIc8
+    Rank: 0
+    HighScore: 0
+    Dirty: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

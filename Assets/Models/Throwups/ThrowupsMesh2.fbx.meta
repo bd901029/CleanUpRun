@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: c3bdfd29ef322bb4390500119802e6b2
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Can1
+    100002: Can2
+    100004: Fridge
+    100006: GarbageBag
+    100008: Health
+    100010: Magnet
+    100012: Multiplayer
+    100014: Pause
+    100016: //RootNode
+    100018: VendingMachine
+    400000: Can1
+    400002: Can2
+    400004: Fridge
+    400006: GarbageBag
+    400008: Health
+    400010: Magnet
+    400012: Multiplayer
+    400014: Pause
+    400016: //RootNode
+    400018: VendingMachine
+    2300000: Can1
+    2300002: Can2
+    2300004: Fridge
+    2300006: GarbageBag
+    2300008: Health
+    2300010: Magnet
+    2300012: Multiplayer
+    2300014: Pause
+    2300016: VendingMachine
+    3300000: Can1
+    3300002: Can2
+    3300004: Fridge
+    3300006: GarbageBag
+    3300008: Health
+    3300010: Magnet
+    3300012: Multiplayer
+    3300014: Pause
+    3300016: VendingMachine
+    4300000: Fridge
+    4300002: VendingMachine
+    4300004: GarbageBag
+    4300006: Can2
+    4300008: Can1
+    4300010: Magnet
+    4300012: Multiplayer
+    4300014: Pause
+    4300016: Health
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 2
+  userData: 

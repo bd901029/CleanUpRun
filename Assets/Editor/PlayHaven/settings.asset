@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1112182039, guid: 881efd0a050d04f58b6f926ccc363348, type: 3}
+  m_Name: settings
+  isDirty: 0
+  user:
+    userId: 10010681
+    firstName: Ashley
+    lastName: Wright
+    email: bluejunglestudios@gmail.com
+    company: Blue Jungle Studios
+  games:
+  - workingTitle: Dustbin Dash
+    applicationId: 
+    operatingSystem: 0
+    orientation: 1
+    state: 0
+    id: 33823
+    token: 6132abbc7be749d092ec3fdea3275c6d
+    secret: da50c1ab249948d783b7c666d1699bd5
+  thisGameIOS:
+    workingTitle: Dustbin Dash
+    applicationId: 
+    operatingSystem: 0
+    orientation: 1
+    state: 0
+    id: 33823
+    token: 6132abbc7be749d092ec3fdea3275c6d
+    secret: da50c1ab249948d783b7c666d1699bd5
+  thisGameAndroid:
+    workingTitle: 
+    applicationId: 
+    operatingSystem: 0
+    orientation: 2
+    state: 0
+    id: 0
+    token: 
+    secret: 
+  placementsOnServerIOS:
+  - tag: on_startup
+    id: 1099764
+    name: This will show after the game has loaded up & before player starts to play
+    isDirty: 0
+    state: 0
+  placementsOnServerAndroid: []
+  placementsNotOnServer: []
+  rewardsOnServerIOS: []
+  rewardsOnServerAndroid: []
+  rewardsNotOnServer: []
+  iapsOnServerIOS: []
+  iapsOnServerAndroid: []
+  iapsNotOnServer: []
+  versionsOnServerIOS: []
+  versionsOnServerAndroid: []
+  versionsNotOnServer: []

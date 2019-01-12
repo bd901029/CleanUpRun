@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 20: {fileID: 2000000}
+  m_Layer: 0
+  m_Name: ShopScreen
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!20 &2000000
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 100
+  m_Depth: 10
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_HDR: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee8b8c808479462fbdde367b1ab5811, type: 3}
+  m_Name: 
+  enableKeyboard: 1
+  enableMouse: 1
+  enableMouseOver: 1
+  multitouch: 1
+  fps: 30
+  colorTransform: {r: 1, g: 1, b: 1, a: 1}
+  stageScale: {x: 1, y: 1}
+  syncStageScalePerFrame: 1
+  processInputOnUpdate: 1
+  m_SWFName: UI/Pause.swf
+  m_RootName: ShopMenu
+  m_Variables:
+  - name: Home
+    parent: back_btn
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Balance
+    parent: balance_box
+    element: 
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemDesc1
+    parent: item_1
+    element: description_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemDesc2
+    parent: item_2
+    element: description_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemDesc3
+    parent: item_3
+    element: description_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemDesc4
+    parent: item_4
+    element: description_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemIcon1
+    parent: item_1
+    element: icon
+    type: 3
+    audio: {fileID: 0}
+  - name: ItemIcon2
+    parent: item_2
+    element: icon
+    type: 3
+    audio: {fileID: 0}
+  - name: ItemIcon3
+    parent: item_3
+    element: icon
+    type: 3
+    audio: {fileID: 0}
+  - name: ItemIcon4
+    parent: item_4
+    element: icon
+    type: 3
+    audio: {fileID: 0}
+  - name: ItemPrice1
+    parent: item_1
+    element: price_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemPrice2
+    parent: item_2
+    element: price_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemPrice3
+    parent: item_3
+    element: price_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemPrice4
+    parent: item_4
+    element: price_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemCan1
+    parent: item_1
+    element: can_icon
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemCan2
+    parent: item_2
+    element: can_icon
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemCan3
+    parent: item_3
+    element: can_icon
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemCan4
+    parent: item_4
+    element: can_icon
+    type: 2
+    audio: {fileID: 0}
+  - name: Upgrades
+    parent: upgrades_btn
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Characters
+    parent: characters_btn
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: SingleUseBtn
+    parent: single_use_btn
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: UpgradesBtn
+    parent: permanent_upgrades_btn
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: '-'
+    parent: store_btn
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: Buy1
+    parent: item_1
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Buy2
+    parent: item_2
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Buy3
+    parent: item_3
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Buy4
+    parent: item_4
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Item1
+    parent: item_1
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: Item2
+    parent: item_2
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: Item3
+    parent: item_3
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: Item4
+    parent: item_4
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemBg1
+    parent: item_1
+    element: item_bg
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemBg2
+    parent: item_2
+    element: item_bg
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemBg3
+    parent: item_3
+    element: item_bg
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemBg4
+    parent: item_4
+    element: item_bg
+    type: 2
+    audio: {fileID: 0}
+  - name: Next
+    parent: next_btn
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: Previous
+    parent: prev_btn
+    element: 
+    type: 0
+    audio: {fileID: 0}
+  - name: NextButton
+    parent: next_btn
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: PreviousButton
+    parent: prev_btn
+    element: 
+    type: 2
+    audio: {fileID: 0}
+  - name: ItemExtDesc1
+    parent: item_1
+    element: description_extended_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemExtDesc2
+    parent: item_2
+    element: description_extended_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemExtDesc3
+    parent: item_3
+    element: description_extended_box
+    type: 1
+    audio: {fileID: 0}
+  - name: ItemExtDesc4
+    parent: item_4
+    element: description_extended_box
+    type: 1
+    audio: {fileID: 0}
+  m_PageChanges:
+  - action: Upgrades
+    prefab: {fileID: 100000, guid: 67db29fb5575845cf843ff01e0eff2a9, type: 2}
+  - action: Characters
+    prefab: {fileID: 100000, guid: 9f8f275fbf53b497ca3afd9646c45b4d, type: 2}
+  m_ButtonSound: {fileID: 8300000, guid: daf325398701f4106b29bbf2f7750e4d, type: 3}
+  m_Type: 0
+  BackFE: {fileID: 100000, guid: 548553d8662264d61aed39db205808bc, type: 2}
+  BackGame: {fileID: 100000, guid: 3dc852cba03464176a874da55e9cfbd1, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

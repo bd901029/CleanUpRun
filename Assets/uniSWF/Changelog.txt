@@ -1,0 +1,189 @@
+
+Version 1.0.3 ( Current development version )
+
+Changelog summary:
+	* (feature+) Fluid layout engine added, allow auto layout of game ui for any screen sizes and aspect ratios.
+
+	* Simple un-optimised XML based action vm added for basic timeline control, eg. call uniSWF.stop() etc ( swc lib is required ).
+
+	* VM Commands added for events, playing sounds, timeline control, scene and navigate url plus the fluid layout engine.
+
+	* MovieClip.label fixed, can get label between label definitions.
+
+	* MovieClip alpha bug fix when calling gotoAndStop/Play would not update alpha.
+
+	* TextField fixed DPI scaling when scaling down for 3g beta feature.
+
+	* DisplayObject.addChild invalidates matrix cache disabled ( can re-enable by setting depreciatedInvalidateMatrixAfterAddChild )
+
+	* InteractiveMovieClipBehaviour mouse coords set to -99999 if not inside collider plane.
+
+	* CLICK event now handled correctly.
+
+	* pumpkin.net package added, basic URL loader queue and abstraction ( wraps WWW class )
+	
+	* EventDispatcher bug, fixed listeners getting removed when deep dispatching.
+
+	* Added custom resource loader interface ISwfResourceLoader
+
+ 	* Added BuiltinResourceLoader
+
+ 	* Added MovieClipPlayer.rootResourceLoader, can replace default loader with custom one
+
+ 	* MovieClipPlayer.swfPrefix  moved to BuiltinResourceLoader.swfPrefix
+
+ 	* Profile export prefixes resources with profile name (re-export required of all profiled assets)
+
+ 	* Swf Uri browser has search function.
+ 	
+ 	* Basic asset bundle support added to BuiltinResourceLoader ( beta )
+ 	
+ 	* Tile packer added to swf convert, splits large assets into padded smaller tiles, allows better texture packing options and higher res assets. ( beta )
+
+ 	* Fixed edge artefcats on some textures by padding textures to prevent bilinear/trilinear filtering from bleeding into the next tile. to enable go Export options->Avanced->Texture Padding.
+
+ 	* MovieClipBehaviour.staticRemoveOnStart added, will remove movieclip on first update, performance optimisation
+
+ 	* StaticMovieClipBehaviour added, fast movieclip rendering for static objects, also has the ability to manually update the movieclip during runtime.
+
+ 	* TweenerObj.tweenUpdate() made public from internal, allows manual/external updating of tweens.
+
+ 	* MovieClipPlayer.enableDepreciatedPreFrameCallback will enable frame callbacks before display list fixup in the movieclip class, false will have a valid frame display lists when the frame callback is fired.
+
+ 	* MovieClipProfiler.ParseXmlActions added to profile action parsing during runtime.
+
+ 	* Added Window->uniSWF->Export Selected, allows manual swf export by selecting the swf file in the project view.
+
+	* Tilemap export options added ( beta )
+
+	* added DisplayObjectContainer.addChildAt(..)
+
+	* Add texture packer options to Swf Export Options, allow refining texture packing iterations.
+
+	* Font filter clipping issue resolved
+
+	* Font export when transforming fields ( will still report as warning ).
+
+	* New texture packer, added load of options to balance time vs efficiency.
+
+	* NO_DEFAULT unicode parameter added, disables default charset from being exported to save texture space.
+
+	* Small tile grouping added to speed up texture packer, groups very small objects into groups
+	
+	* Bottom right area of the texture is now used by texture packer
+
+	* MovieClipBehaviour.editorPreview enforced in exec in editor update ( please note its still not enforced in refresh & swf browser )
+
+	* (beta) Support for non-Resource based swfs.
+
+	* (beta) New font glyph reader, improved character spacing on some fonts ( doesn't work on size 12 fonts for some reason due to em to pixels translation issue ).
+
+	* (beta) Intial support for scale9 but very limited, only 1 frame supported and text fields will not work correctly.	
+
+	* Initial flash target added as separate DLL some features has been disabled due to the cil2as3 limitations in the current unity release.
+
+	* SwfBackgroundPreloader added, allow loading swf assets in the background.
+
+	* UniSWFSharedAssetManagerBehaviour.clearContextCache enabled by default, when changing scenes the swf cache will be cleared. when migrating from <= 1.0.2 just disable this in the property inspector.
+
+	* renamed SpriteSheetMovieClipBehaviour.movieclip to swf.
+
+	* MovieClipOverlayCameraBehaviour removed default internal MovieClip, calling getChildAt( 2 ) on stage may break some things, just add a display object before the scene start to fix any issues.
+
+	* MovieClipBehaviour now supports text color ( previous fix was to use overlay camera backend renderer ).
+
+Version 1.0.2 hotfix_1:
+
+	* Mem leak fixed when switching scenes, call MovieClip.clearContextCache() to release uniswf swf cache when changing scenes.
+	* TextureManager.allowEditorUnload added
+	* MovieClip.clearContextCache() fixed to unload textures
+	* TextureManager.instance.clearTextureCache() removes resources.
+	* SwfBackgroundPreloader added
+
+
+Version 1.0.2
+
+Changelog summary:
+	* (Converter) Added support for swf's exported from Flash CS6
+	
+
+Version 1.0.1
+
+Changelog summary:
+	* (Editor) (Usability issue) Window->uniSWF->Export Options -> fonts -> "Export fonts" change default to true, Fonts will now work out of the box.
+
+	* (Editor) (Usability issue) Window->uniSWF->Export Options -> fonts -> "Charset" renamed to "Embed characters".
+
+	* (Lib) (feature) Added UniSWFSharedAssetManagerBehaviour to allow shared assets to be loaded without any scripting, also detects script exec order to ensure assets are preloaded before any other gameObjects.
+		
+	* (Editor) Converter app version detection in welcome screen after update and change log link added to welcome screen.	
+	
+	* (Editor) Added version mismatch detection warning, prompt user to update convert to latest version.		
+
+	* (Converter) Label frame number export error, when labels were spaced out the frame label would be incorrectly stored.
+
+	* (Converter) Additional default embed characters #~()$*\\/@;<>^
+
+	* (Lib) (feature) MovieClip.addFrameScript() added, allows per frame/label callbacks instead of manually checking for the currentFrame every Update().
+
+	* (Converter) Added build version to RPC ping command.	
+	
+	* (Lib) InteractiveMovieClipBehaviour error when Camera.main is null or there is no camera tagged with "MainCamera", can now select the camera to use for input along with better defaults.		
+
+	* (Lib) Textfield cursor height calculation determined by an average of the character minY and maxY instead of the line height
+
+	* (Lib) Textfield.maxChars property added to API, flash IDE text property "Max chars" support added also.
+
+	* (Lib) Textfield.validChars added, restricts text input to certain characters.
+
+	* (Lib) Added MovieClip.currentLabel.
+
+	* (Lib) Added MovieClip.playBackwards().
+
+	* (Converter) Text bounds calculation doesn't include filters so drop shadows and glows work better now.	
+
+	* (Lib) MovieClipOverlayCamera fixed screen resize issue, stage will maintain correct pixel size after viewport resize.	
+	
+	* (Lib) TextField backwards computability update.
+
+	* (All) Font rendering quality issue resolved, changed texture filtering to point ( will add global filtering options in the next update ).
+
+	* (Lib) TextFormat.leading added, allows changing the line spacing.
+
+	* (Lib) TextField.getGlyph( char id ), get underlying glyph which allows character customisation eg. change character render width.
+
+	* (Lib) TextField input issue on web player when handling return key, added /r keycode to line-return detection.
+
+	* (All) Font export classname changed filter descriptors to hash for speed, requires will break shared fonts so re-export of all shared asset required.
+
+	* (Lib) TextFormat.fontClassName added.
+
+	* (Lib) TextFormat.exportedStyleName added.
+
+	* (Editor) Window->uniSWF->Export All, adds ability to mass export SWF assets.
+
+	* (Converter) Finally added support for nested movie clips, no more exporting all the movie clips in the library.
+
+	* (Editor) Added Exporter nested movie clips options (default), when disabled movie clips/symbols are baked along with filter into bitmaps unless exported.
+	
+	* (Tutorial) 'Tutorial 04 - Timeline control' added.
+	
+	* (Tutorial) 'Tutorial 05 - TextFields and bitmap fonts' added.
+	
+	* (Tutorial) 'Tutorial 07 - Shared assets and fonts' added.
+	
+	* (Lib) DisplayObject.clipRect ( only implemented in MovieClipOverlayCamera, wont work in 3D ) experimental clipping added, useful for doing scrollable panels etc
+
+	* (All)  Window->uniSWF->Export Options -> fonts -> "Embed unicode ranges", allows adding any unicode range to the font export eg. CJK Unified Ideographs would be "4E00-9FFF", please note this will take a while as its generating 20991 glyphs so its probably best narrow down the charset and export fonts in a separate asset.
+
+	* (Converter) Font layout engine now uses grids to optimise compile time for large character sets, 20k characters takes < 30 seconds.
+
+	* (Converter) Font rendering in win32 improved, fixed floating point number rounding error.
+	
+	* (Lib) Changed mouse event processing priority in MovieClipOverlayCameraBehaviour to before renderFrame() update, resolves event/display sync and UI response issues.
+
+	* (Project) Renamed example projects to remove 'Pro Only' as examples will now work on all releases of Unity and uniSWF.
+	
+Misc changelog notes:	
+	* Changed the default font export options to not use shared assets, makes it easier to get textfields working out of the box, the  pumpkin.editor.SwfAssetExportOptions::exportFonts changed from false to true.
+	* New default embed charset changed to: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.'\"_-+:!?#~()$*\\/@;<>^|
